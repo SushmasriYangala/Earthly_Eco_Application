@@ -1,0 +1,44 @@
+.left-back {
+  position: absolute;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.left-back:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.left-back i {
+  margin-right: 5px;
+}
+.home {
+ display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.home:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home i {
+  margin-right: 5px;
+}

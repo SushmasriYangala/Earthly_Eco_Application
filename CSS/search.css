@@ -1,0 +1,107 @@
+body {
+    background-color: #DCD9D4;
+    background-image: url("../Images/home.jpg");
+    background-size: cover;
+}
+
+.eco-card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 35px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 300px;
+    width: 250px;
+}
+
+.eco-card:hover {
+    transform: translateY(-10px);
+}
+
+.eco-card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 35px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.eco-card:hover img {
+    transform: scale(1.1);
+}
+
+.eco-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.eco-card:hover h2 {
+    color: #625f5f;
+}
+
+.eco-card button {
+    background-color: #706c6c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.eco-card button:hover {
+    background-color: #7f7d7d;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(69, 68, 68, 0.5);
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-image: linear-gradient(109.1deg, rgba(181, 73, 91, 1) 7.1%, rgba(225, 107, 140, 1) 86.4%);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #989191;
+}
+
+/* Add a media query to adjust the height for smaller screens */
+@media only screen and (max-width: 768px) {
+    .eco-card {
+        height: 300px;
+    }
+}

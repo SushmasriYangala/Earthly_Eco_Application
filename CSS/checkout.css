@@ -1,0 +1,37 @@
+/* CSS for Checkout Confirmation Page */
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Adjust background color as needed */
+    border: 1px solid #ccc; /* Add a border for container */
+    border-radius: 5px; /* Add border radius for container */
+}
+
+.container h1 {
+    text-align: center; /* Center align heading */
+}
+
+.container h2 {
+    margin-top: 20px; /* Add margin top for section headings */
+}
+
+.container p {
+    margin-bottom: 10px; /* Add margin bottom for paragraphs */
+}
+
+.container button[type="submit"] {
+    padding: 10px 20px;
+    background-image: linear-gradient(109.1deg, rgba(181, 73, 91, 1) 7.1%, rgba(225, 107, 140, 1) 86.4%);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button[type="submit"]:hover {
+    background-color: #989191;
+}

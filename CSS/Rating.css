@@ -1,0 +1,22 @@
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl
+  }
+
+  .rating input {
+    display: none;
+  }
+
+  .rating label {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc;
+  }
+
+  .rating label:hover,
+  .rating label:hover ~ label,
+  .rating input:checked ~ label {
+    color: #ffcc00;
+  }

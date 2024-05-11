@@ -1,0 +1,167 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #0d0d0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: -20px 0 50px;
+  background-image: url("../Images/home.png");
+  background-size: cover;
+}
+
+.logo {
+  font-family: "Brush Script MT";
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px;
+  left: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: rgb(10, 10, 10);
+  font-size: 80px;
+}
+
+.slider {
+  width: 1000px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid black;
+  box-shadow: 0 14px 28px rgba(133, 27, 27, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 1000px;
+  height: 600px;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #0c0c0c;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #0c0c0c;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 2px solid #0c0c0c;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #0c0c0c;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #0c0c0c;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #0c0c0c;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #0c0c0c;
+}
+.button {
+  display: inline-block;
+  background-color: #e8e3b5;
+  border: 2px solid #020202;
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgb(61, 60, 60);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 150px;
+  box-shadow: 4px rgba(5, 5, 5, 0.1);
+  text-align: right;
+}
+
+
+.button:hover {
+  background-color: #c7c08b; /* Change background color on hover */
+  color: #080808; /* Change text color on hover */
+}

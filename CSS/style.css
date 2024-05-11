@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "El Messiri", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #090909;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 5%;
+  background-image: url("../Images/Style.jpeg");
+  background-size: cover;
+}
+
+.fas {
+  width: 32px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  left: 13px;
+}
+
+section {
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  position: relative;
+  padding: 50px;
+  width: 260px;
+  min-height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(50, 46, 46, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 25px 45px rgba(20, 19, 19, 0.2);
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  border-radius: 5px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 2%
+  );
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0a0a0a;
+}
+
+.inputBx {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 80%;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(7, 7, 7, 0.2);
+  padding: 8px 10px;
+  padding-left: 40px;
+  border-radius: 15px;
+  color: #0b0b0b;
+  font-size: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.password-control {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+  transition: 0.5s;
+}
+
+.view {
+  background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+  transition: 0.5s;
+}
+
+input[type="submit"] {
+  background: linear-gradient(
+    115deg,
+    rgba(235, 211, 211, 0.1),
+    rgba(160, 203, 221, 0.25)
+  );
+  color: #111;
+  max-width: 100px;
+  padding: 8px 10px;
+  box-shadow: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(
+    115deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(255, 255, 255, 0.25)
+  );
+  color: #080808;
+  transition: 0.5s;
+}
+
+input::placeholder {
+  color: #090909;
+}
+
+span {
+  position: absolute;
+  left: 30px;
+  padding: 10px;
+  display: inline-block;
+  color: #070707;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+input:focus ~ span,
+input:valid ~ span {
+  transform: translateX(-30px) translateY(-25px);
+  font-size: 12px;
+}
+
+p {
+  color: #020202;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+a {
+  color: #030303;
+}
+
+a:hover {
+  background-color: #000;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.remember {
+  width: 15px;
+  position: absolute;
+  top: 0px;
+  left: 13px;
+  cursor: pointer;
+}
+
+label {
+  height: 40px;
+  position: relative;
+  font-family: "El Messiri", sans-serif;
+  bottom: 5px;
+  left: 45px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: rgb(37, 36, 36);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: absolute;
+  overflow: hidden;
+  width: 500px;
+  max-width: 140%;
+  min-height: 400px;
+  opacity: 0.8;
+}
+
+.box h1 {
+  position: absolute;
+  left: 135px;
+  top: 30px;
+  display: inline-block;
+}
+
+.header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+}
+
+.header h1 {
+  font-family: "Brush Script MT";
+  font-weight: bold;
+  color: rgb(4, 4, 4);
+  font-size: 80px;
+}
+
+@media (max-width: 768px) {
+  /* CSS rules for screens up to 768px */
+  body {
+    margin: 0 20px; /* Adjust margin for smaller screens */
+  }
+  
+  .container {
+    width: 90%; /* Adjust container width for smaller screens */
+  }
+  
+  /* Add more styles as needed */
+}

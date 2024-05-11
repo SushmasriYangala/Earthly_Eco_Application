@@ -1,0 +1,64 @@
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  #eco-image img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px; /* Add margin right for spacing */
+  }
+  
+  .item-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item-name {
+    font-weight: bold;
+    margin-bottom: 5px; /* Add margin bottom for spacing */
+  }
+  
+  .item-price,
+  .item-quantity,
+  .item-total {
+    margin-bottom: 5px; /* Add margin bottom for spacing */
+  }
+  
+  .quantity-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-button {
+    background-color: #e879a0;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quantity-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .item-quantity {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .button-container {
+    margin-top: auto; /* Push the button to the bottom of the container */
+  }
+  

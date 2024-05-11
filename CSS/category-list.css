@@ -1,0 +1,26 @@
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: fit-content; /* Set width to fit the content */
+    max-width: fit-content; /* Set maximum width to 400px */
+}
+
+.product img {
+    width: max-content; /* Set the width of the image to 50% of its container */
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 18px;
+    color: #0b0b0b;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HOME</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway|Spectral"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <meta name="viewport" content="width-device-width,initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
+    />
+  </head>
+
+  <body>
+    <form method="post" action="./PHP/editdetails.php">
+      <header class="header">
+        <h1>Earthly Eco</h1>
+      </header>
+      <section>
+        <div class="container">
+          <div class="form">
+            <h2>Sign In</h2>
+              <div class="inputBx">
+                <input type="text" name="Username"/>
+                <span>Username</span>
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="inputBx">
+                <input type="text" name="Address" required="required" />
+                <span>Address</span>
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="inputBx">
+                <input type="submit" name="signin" value="Update" />
+              </div>
+            <p>Already have an account <a href="login.html">Log In</a></p>
+          </div>
+        </div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./JS/main.js"></script>
+    </form>
+  </body>
+</html>

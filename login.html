@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HOME</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway|Spectral"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <meta name="viewport" content="width-device-width,initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
+    />
+  </head>
+
+  <body>
+      <header class="header">
+        <h1>Earthly Eco</h1>
+      </header>
+      <section>
+        <div class="container">
+          <div class="form">
+            <form method="post" action="./PHP/login.php">
+            <h2>LOGIN</h2>
+            <div class="inputBx">
+              <input type="email" name="Email" required="required" />
+              <span>Email</span>
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="inputBx password">
+              <input
+                id="password-input"
+                type="password"
+                name="Password"
+                required="required"
+              />
+              <span>Password</span>
+              <a
+                href="#"
+                class="password-control"
+                onclick="return show_hide_password(this);"
+              ></a>
+              <i class="fas fa-key"></i>
+            </div>
+            <div class="inputBx">
+              <input type="checkbox" id="remember" class="remember" />
+              <label for="remember">Keep me Signed in</label>
+            </div>
+            <div class="inputBx">
+              <input type="submit"name="login" value="Log in" />
+            </div>
+            <p>Forgot password? <a href="forgotpassword.html">Click Here</a></p>
+            <p>Don't have an account <a href="signin.html">Sign up</a></p>
+          </form>
+          </div>
+        </div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./JS/main.js"></script>
+  </body>
+</html>
